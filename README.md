@@ -13,5 +13,5 @@ Essas páginas serão hospedas no GitHub Pages e você poderá ter acesso
 por meio dos links a seguir:
 
 * Projeto UNES - [Click Aqui](https://fagnerzulin.github.io/Projeto-Unes/)
-* Projeto Anna Bella
+* Projeto Anna Bella - [Click Aqui](https://fagnerzulin.github.io/Projeto-Anna-Bella/)
 * Projeto TecBlog
