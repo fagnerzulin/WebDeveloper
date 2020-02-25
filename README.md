@@ -14,4 +14,5 @@ por meio dos links a seguir:
 
 * Projeto UNES - [Click Aqui](https://fagnerzulin.github.io/Projeto-Unes/)
 * Projeto Anna Bella - [Click Aqui](https://fagnerzulin.github.io/Projeto-Anna-Bella/)
-* Projeto TecBlog
+* Projeto TecBlog - [Click Aqui](https://fagnerzulin.github.io/Projeto-TecBlog/)
+ 
