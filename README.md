@@ -1,8 +1,7 @@
 # WebDeveloper
 Curso de desenvolvimento web
 
-Este repositório foi criado para armazenar os código desenvolvidos ao logo
-do Curso de Desenvolvimento Web do Jamilton Damasceno.
+Este repositório foi criado para armazenar os código desenvolvidos no Curso de Desenvolvimento Web do Jamilton Damasceno.
 
 Para conhecer o curso, clique no link a seguir: 
 [Curso](https://www.udemy.com/course/web-completo/)
