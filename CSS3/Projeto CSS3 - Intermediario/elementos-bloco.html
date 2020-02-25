@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+	<!-- 
+	Elementos Bloco
+
+		Inline:
+			Ex:<a>, <span>, <img>
+			Toda vez que utilizado, os elementos inline fica um a frente do outro
+			A largura da caixa é de acordo com o seu conteúdo
+
+		Block:
+			Ex: <h1>, <p>, <table>
+			Eles tem uma largura que ocupa todo o espaçamento da tela, ou seja todo o espaço disponivel em tela, ele vai ocupar
+			Elementos block ficam um a baixo do outro
+
+		Inline-block:
+			Ex: display: inline-block
+			Nesse caso, a largura é definida de acordo com o seu conteúdo 
+			E os elementos ficam um debaixo do outro
+			Os elementos só passam para a linha seguinte se o seu antecessor ocupar a linha toda
+
+		ATENÇÃO: para alterar o comportamento de qualquer tipo de elemento acima, usa-se a propriedade display, que recebe os seguintes valores: inline, block, inline-block
+	-->
+
+	<head>
+
+		<title>Elementos inline, block e inline-block</title>
+		<meta charset="utf-8">
+
+		<style type="text/css">
+			
+			.borda{
+				border: 1px solid red;
+				display: inline-block;
+			}
+
+
+		</style>
+
+	</head>
+
+
+	<body>
+		<!--
+		<h1 class="borda">Bloco 1</h1>
+		<h1 class="borda">Bloco 2</h1>
+		-->
+
+		<span class="borda">inline 1 
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+		<span class="borda">inline 2</span>
+
+
+
+	</body>
+
+
+</html>

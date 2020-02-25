@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+	<!--
+	Elementos Flutuantes
+	
+	as tags com float sobrepõem as que não estão
+	
+	quando aplicada o mesmo valor de float para tags visinhas
+	elas são colocadas uma do lado da outra
+	 -->
+
+	<head>		
+		<title>Elementos flutuantes</title>
+		<meta charset="utf-8">
+		<style type="text/css">
+			
+			#principal{
+				border:5px solid red;
+				background: green;
+			}
+
+			.conteudo{
+				background: blue;
+				border: 1px solid gray;
+				width: 200px;
+				height: 200px;
+				float: left;
+				margin: 10px;
+			}
+
+		/*Valores de float: left, right, none*/
+
+			/*.conteudo1{
+				background: red;
+				border: 1px solid gray;
+				width: 200px;
+				height: 20px;
+				float: left;
+				margin: 10px;
+			}*/
+
+			.conteudo-zero{
+				background: red;
+				border: 1px solid gray;
+				width: 200px;
+				height: 200px;
+			
+				margin: 10px;
+			}
+
+			/* Limpa o fluxo flutuante
+			Valores da propriedade clear:
+			left, right, none, both - ambos os lados*/
+			.clear{
+				clear: both;
+			}
+		
+		</style>
+	</head>
+
+
+
+	<body>
+		<div id="principal">
+			<div class="conteudo">
+				Conteudo 1
+			</div>
+
+			<div class="conteudo">
+				Conteudo 2
+			</div>		
+
+			<div class="conteudo">
+				Conteudo 3
+			</div>
+
+			<p class="clear">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+			<!--<dir class="clear"></dir> -->
+
+
+		</div>
+		
+
+	</body>
+
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+	<!-- 
+		Posicionamentos
+
+			static - estático - é o posicionamento padrão
+
+			relative - relativo - quando usado é necessário o uso de 
+			propriedades de deslocamento para a movimentação
+			essas propriedades tem 4 tipos: top, right, buttom e left
+			a movimentação acontece a partir da posição inicial do elemento
+			os valores das propridades podem ser positivos ou negativos
+
+			absolute - absoluto - o elemento que recebe essa posição
+			sai do fluxo normal do documento e não afeta a posição dos outros elementos da página
+			também é possivel de movimentar com as propriedades do relative
+			o posicionamento é feito a partir do container que o elemento absoluto está inserido
+			o container precisa ter um posicionamento diferente de static para que o absoluto tome ele como referencia, caso o contrário, o posicionameto será feito a partir do body
+
+
+			fixed - fixo - fixa o elemento, tendo como referencia a janela do navegador
+			é possivel usar as propriedade de movimentação
+	
+	-->
+
+	<head>
+
+		<title>Posicionamentos (static, relative, absolute e fixed)</title>
+		<meta charset="utf-8">
+
+		<style type="text/css">
+
+			body{
+				background: #007fc7;
+			}
+		
+			#container{
+				background: #fff;
+				width: 800px;
+				margin: 10px auto;
+				padding: 10px;
+				
+				
+			}
+
+			h1 {
+				
+
+			}
+
+			p{
+				width: 300px;
+
+			}
+
+			.relative{
+				border: 1px solid red; 
+				position: relative;
+				/*top: 0px;*/
+				/*left: 0px;*/
+				/*right: 20px;*/
+				bottom: 20px;
+			}
+
+			.absolute{
+				background: #f2f2f2;
+				border: 1px solid red; 
+				position: absolute;
+				top: 80px;
+				right: 80px;
+
+			}
+
+			.fixed{
+				background: #f2f2f2;
+				border: 1px solid red; 
+				position: fixed;
+				bottom: 0px;
+				right: 0px;
+				margin: 0px;
+
+			}
+
+		</style>
+
+	</head>
+
+
+	<body>
+	
+		<div id="container">
+			
+			<h1>Posicionamento</h1>
+
+			<p>
+				P1 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+
+			<p class="fixed">
+				P2 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+
+			<p>
+				P3 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+
+						<p>
+				P3 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+
+						<p>
+				P3 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+
+						<p>
+				P3 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+
+						<p>
+				P3 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+
+			<p>
+				P3 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+			
+		</div>
+
+
+	</body>
+
+
+</html>

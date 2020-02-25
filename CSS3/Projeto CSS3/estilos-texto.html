@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+			<!-- -->
+	<head>
+		<title>Tamanho de textos</title>
+		<meta charset="utf-8">
+
+		<style type="text/css">
+			
+			body {
+				font-size: 40px;
+				font-family: "Times New Roman", Times, serif;
+
+			}
+
+			.negrito {
+
+				/*
+				a propriedade font-weight determina o peso da fonte
+
+				Valores: normal, bold (negrito - pode definir o valor do negrito de 100 até 900)
+				*/
+
+				font-weight: 900;
+			}
+
+			.italico{
+				/*deixa o texto em itálico*/
+				font-style: italic;
+			}
+
+			.formatacao{
+
+				/*
+				a propriedad text-decoration permite inserção de elementos 	decorativos no texto
+
+				valores:
+
+					underline - sublinhado (risco a baixo)
+					overline - sublinhado (risco a cima)
+					line-through - risco no meio da linha 
+				*/
+
+				text-decoration: line-through; 
+			}
+
+			.texto{
+				/*para definir todas as formatações em uma unica linha, usa-se a propriedade font
+				
+				Sintaxe:
+
+				font: font-style font-variant font-weight font-size/line-height font-family
+	
+				*/
+
+
+				font: bold 40px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+
+			}
+
+
+
+		</style>
+
+	</head>
+
+
+	<body>
+
+		<p class="negrito">Texto Negrito</p>
+		<p class="italico">Texto Itálico</p>
+		<p class="formatacao">Formatação de Textos</p>
+		<p class="texto">Texto</p>
+		<p>Texto Normal</p>
+
+
+	</body>
+</html>

@@ -1,0 +1,66 @@
+/*.conteudo{
+	border: 1px solid red;
+	/*padding-top: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;*/
+	
+	/*É possivel definir os quatro valores do padding usando somente esta propriedade 
+	(em sentido horario, começando do top*/
+	/*padding: 20px 15px 10px 5px;*/
+
+
+	/*ainda com a propriedade padding, podemos definir um valor unico para todos 
+	os lados da tag*/
+	/*padding: 20px;
+
+	/*e por fim, é possivel definir um valor unico para direita e esquerda,
+	 e em cima e em baixo.*/
+	/*padding: 20px 5px;*/
+
+	/*Espaçamento externo - margin*/
+	/*margin-top: 20px;
+	margin-right: 20px;
+	margin-left: 20px;
+	margin-bottom:20px;*/
+
+	/*É possivel definir os quatro valores do margin usando somente esta propriedade 
+	(em sentido horario, começando do top*/
+	/*margin: 20px 15px 10px 5px;*/
+
+	/*ainda com a propriedade margin, podemos definir um valor unico para todos 
+	os lados da tag*/
+	/*margin: 10px;
+
+	/*e por fim, é possivel definir um valor unico para direita e esquerda,
+	 e em cima e em baixo.*/
+	/*margin: 20px 5px;*/
+
+	/*width: 150px;
+	
+}
+/*
+O tamanho do padding é somado ao tamanho definido da width e heigth
+*/
+/*
+.conteudo2 {
+	border: 1px solid red;
+	padding: 20px;
+	margin: 10px;
+	width: 150px;
+}*/
+
+
+/*NOTICIA*/
+
+#noticia{
+	background: #f9f9f9;
+	padding: 10px;
+	border: 1px solid gray;
+}
+
+h2{
+	
+	margin: 0px;
+}
+

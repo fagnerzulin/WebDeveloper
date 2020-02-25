@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+		<!-- -->
+	<head>
+
+		<title>Tabelas</title>
+		<meta charset="utf-8">
+		<!--configura a codificação da página -->
+
+	</head>
+
+
+	<body>
+
+		<h2>Produtos</h2>
+		<!-- tag que criar a primeira estrutura da tabela-->	
+		<!-- a propriedade border define a espessura 
+		da borda da tabela em px -->
+		<table border="2" width="50%"> <!-- o width pode ser definido em porcentagem (em relação a area do browser) -->
+			<!-- a tag tr define a linha da tabela -->
+
+			<tr>
+				<!-- a tag th define o cabeçalho da tabela
+				deixando o texto em destaque -->
+				<th>Código</th>
+				<th>Produto</th>
+				<th>Preço</th>
+
+			</tr>
+
+			<tr>
+				<!-- define a estrutura que irá armazernar os dados da tabela -->
+				<td>001</td>
+				<td>Notebook</td>
+				<td>R$2.500,99</td>
+
+			</tr>
+
+			<tr>
+				
+				<td>002</td>
+				<td>Tablet</td>
+				<td>R$999,99</td>
+
+			</tr>
+
+			<tr>
+				<!-- extender a linha pelo numero de linhas desejado (para baixo) -->
+				<td rowspan="2">Desconto</td>
+				<!-- extender a coluna pelo numero de colunas desejado -->
+				<td colspan="2">cupom1 -R$10</td>
+			</tr>
+			<tr>
+				<!-- extender a coluna pelo numero de colunas desejado -->
+				<td colspan="2">cupom2 -R$12</td>
+			</tr>
+			<tr>
+				<td>Total:</td>
+				<!-- extender a coluna pelo numero de colunas desejado -->
+				<td colspan="2">R$3.478,98</td>
+			</tr>
+		</table>
+
+	</body>
+
+
+</html>

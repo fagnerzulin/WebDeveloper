@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+			<!-- -->
+	<head>
+		<title>Tamanho de textos</title>
+		<meta charset="utf-8">
+
+		<style type="text/css">
+			/*o em é usado principalmente pra indexar os medidas das fontes em uma só, mantendo tudo proporcional a determianda medida*/
+			div {
+				font-size: 30px;
+			}
+
+			.texto{
+				/*
+				px - pixel -> tamanho fixo
+				% - porcentagem -> tamanho relativo ao tamanho padrão (16px)
+				em -> tamanho relativo ao container pai (tamanho padrão do container pai)
+				*/
+				/*font-size: 32px;*/
+				font-size: 2em;
+
+			}
+
+			.texto2 {
+				font-size: 15px;
+			}
+		/* o em pode ter valores decimais, com o ponto, ex: 1.5em */
+
+		</style>
+
+	</head>
+
+
+	<body>
+
+		<div>
+		<p class="texto">Conteúdo1</p>
+		<p class="texto2">Conteúdo2</p>
+		</div>
+
+
+	</body>
+</html>

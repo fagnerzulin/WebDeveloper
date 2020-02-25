@@ -1,0 +1,42 @@
+/*********************************/
+/*HERANÇA E ESPECIFICIDADE*/
+/*body{
+	color: red;
+	no css a herança não se aplica o border
+	e ao background
+
+	border: 1px solid blue;
+
+}*/
+/*
+#pagina p{
+	color:red !important;
+}
+#pagina p{
+	color: blue;
+}
+
+;
+/*
+a expressão !important define a preferencia de uma 
+configuração sobre outras de com a mesma referencia 
+*/
+
+/*se um seletor for mais especifico que outro a regra mais especifica
+será aplicada (terá precedencia sobre regras mais gerais)*/
+
+* {
+	color:red;
+}
+
+h2 {
+	color: blue;
+}
+
+h2.verde{
+	color:green;
+}
+
+h2#amarelo {
+	color: yellow;
+}
