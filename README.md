@@ -12,6 +12,6 @@ Ao longo do curso serão desenvolvidos vários projetos de páginas web.
 Essas páginas serão hospedas no GitHub Pages e você poderá ter acesso 
 por meio dos links a seguir:
 
-* Projeto UNES
+* Projeto UNES - [Click Aqui](https://fagnerzulin.github.io/Projeto-Unes/)
 * Projeto Anna Bella
 * Projeto TecBlog
