@@ -1,0 +1,43 @@
+/*ul{
+	
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+li{
+	padding: 5px 20px;
+	background: url(imagens/seta.png) no-repeat left center;
+}*/
+
+ul{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+ul a{
+	width: 200px;
+	height: 40px;
+	display: block;
+	color: #000;
+	text-decoration: none;
+	text-indent: 40px; /*movimenta o texto para a direita*/
+	line-height: 40px; /*determina a altura da linha do texto*/
+	background: #f7b600 url(imagens/menu.png) no-repeat left bottom;
+}
+/*utiliza a classe no elemento html que se deseja deixar estático para marcar a pagina*/
+a:hover /*.selecionado a */{
+	background-position: right bottom;
+	background-color: #f99200;
+	color: #fff;
+}
+
+/*Desta forma a marcação de página (quando estática) fica "automática"*/
+#home #navegacao .home a,
+#sobre #navegacao .sobre a,
+#serviços #navegacao .serviços a {
+	background-position: right bottom;
+	background-color: #f99200;
+	color: #fff;
+}
