@@ -1,0 +1,72 @@
+/*Para layouts fluidos, usa-se as dimensões em %*/
+body{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	background: #f2f2f2;
+}
+
+#container{
+	width: 85%; /*Referencia é a janela*/
+	margin: 0 auto;
+	background: #fff;
+	min-width: 820px; /*Largura minima, para evitar 
+	que os conteúdos se sobreponha*/
+	max-width: 1280px; /*Largura maxima, para evitar 
+	que o layaout se estenda muito*/
+}
+
+header{
+	height: 200px;
+	background: #225992 url("imagens/cabecalho2.jpg") no-repeat center;
+	text-align: center;
+	line-height: 200px;
+}
+
+#conteudo{
+	width: 75%; /*Referencia é o tamanho do container*/ 
+	float: right;
+}
+
+#conteudo-principal{
+	width: 63%; /*Referencia é a soma do conteudo principal e do secundario*/ 
+	float: left;
+}
+
+#conteudo-principal img{
+	width: 94%;
+	padding: 2%;
+	max-width: 600px;
+}
+
+#conteudo-secundario{
+	width: 34%;
+	float: right;
+	background: #d1d1d1;
+}
+
+#conteudo-secundario h2,
+#conteudo-secundario p{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#navegacao{
+	width: 23%; /*Referencia é o tamanho do container*/ 
+	float: left;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background: #d1d1d1;
+}
+
+#navegacao ul{
+	list-style: none;
+}
+
+#navegacao li a{
+	text-decoration: none;
+}
+
+footer{
+	clear: both;
+	background: #c4c4c4;
+	padding: 5px;
+}
