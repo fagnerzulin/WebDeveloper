@@ -1,0 +1,36 @@
+body{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+table {
+	width: 600px;
+	border-collapse: collapse; /*para manter um bordas individualizadas
+	entre as células ou não*/
+}
+
+th, td {
+	
+	padding: 7px;
+}
+
+th{
+	text-transform: uppercase; /*Deixa todas as letras maiusculas*/
+	border-top: 1px solid #999; 
+	border-bottom: 1px solid #111;
+	text-align: left;
+	font-size: 90%;
+	letter-spacing: 0.1em; /*Espaçamento entre as letras da palavra*/
+}
+
+tr.alternado{
+	background-color: #efefef;
+}
+
+tr:hover{
+	background-color: #c6e3e5;
+}
+
+.numero{
+	text-align: right;
+}
+
