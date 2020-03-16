@@ -70,3 +70,71 @@ body.fotos ul a#fotos
 	background: #de003e;
 	cursor: text;
 }
+
+main{
+	width: 750px;
+	height: 150px;
+	margin: 0 auto;;
+	margin-top: 60px;
+}
+
+#lateral{
+	width: 180px;
+	float: left;
+	margin: 0 0 20px -750px;
+
+}
+
+#primario{
+	width: 270px;
+	float: left;
+	margin: 0 0 20px 195px;
+}
+
+#duas-colunas #primario{
+	width: 555px;
+}
+
+#uma-coluna #primario{
+	width: 750px;
+	margin: 0 0 20px 0;
+}
+
+#secundario{
+	width: 270px;
+	float: left;
+	margin: 0 0 20px 15px; 
+}
+
+.caixa{]
+	margin: 10px 0;
+	padding: 5px 0 5px 0;
+	background: #f3f3f3 url(imagens/fundo-caixa.png);
+
+}
+
+h2{
+	font-size: 1em;
+	background: #294c71;
+	color: #fff;
+	padding: 5px;
+}
+
+.caixa-conteudo{
+	background: #fff;
+	padding: 5px;
+	margin-top: 5px;
+
+}
+
+footer{
+	clear: both;
+	background: #294c71;
+	padding: 20px;
+}
+
+footer div{
+	width: 750px;
+	margin: 0 auto;
+	color: #fff;
+}
