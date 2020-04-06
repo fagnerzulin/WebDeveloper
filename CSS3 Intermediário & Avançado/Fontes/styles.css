@@ -1,0 +1,15 @@
+@font-face{
+	font-family: "Road Rage";
+	src: url("fonts/RoadRage.woff");
+}
+
+@font-face{
+	font-family: Heart;
+	src: url("fonts/BringHeart.woff");
+}
+
+
+h1{
+	font-size: 6em;
+	font-family: Heart;
+}
