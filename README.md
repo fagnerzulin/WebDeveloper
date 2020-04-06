@@ -14,4 +14,6 @@ por meio dos links a seguir:
 * Projeto UNES - [Click Aqui](https://fagnerzulin.github.io/Projeto-Unes/)
 * Projeto Anna Bella - [Click Aqui](https://fagnerzulin.github.io/Projeto-Anna-Bella/)
 * Projeto TecBlog - [Click Aqui](https://fagnerzulin.github.io/Projeto-TecBlog/)
+* Projeto Notícias Cidade - [Click Aqui](https://fagnerzulin.github.io/Projeto-Noticias-Cidade/)
+* Projeto Chalé Hotel - [Click Aqui](https://fagnerzulin.github.io/Projeto-Chale-Hotel/) 
  
