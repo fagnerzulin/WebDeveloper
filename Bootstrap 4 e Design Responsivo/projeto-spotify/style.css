@@ -2,6 +2,7 @@ html,
 body,
 #home {
     height: 100%;
+    overflow-x: hidden;
 }
 
 body {
@@ -48,6 +49,67 @@ nav.nav-bar-transparent {
     padding: 15px 20px;
     font-weight: 700;
 }
+.caixa {
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+#servicos {
+    background: white;
+}
+
+#servicos h2,
+#servicos h3 {
+    color: #1db954;
+}
+
+#recursos h2,
+#recursos p {
+    color: white;
+}
+
+#recursos h3 {
+    color: #1ed760;
+}
+
+.rotacionar {
+    transform: rotate(30deg);
+    padding-left: 80px;
+}
+
+footer {
+    background: black;
+    padding: 50px 0px 50px 0px;
+    position: relative;
+}
+
+footer h4 {
+    color: #919496;
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+
+footer .navbar-nav a {
+    color: white;
+    font-size: 0.8em;
+}
+
+footer .navbar-nav a:hover {
+    color: #1ed760;
+    text-decoration: none;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    float: right;
+    margin: 0px 8px;
+}
+
+footer ul li i {
+    color: white;
+}
 
 h1 {
     font-weight: 900;
@@ -56,10 +118,25 @@ h1 {
     color: white;
 }
 
+h2 {
+    font-size: 3em;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+h3 {
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
 /* Dispositivos extra small (telefones em modo retrato, com menos de 576px)*/
 @media (max-width: 575.98px) {
     .btn-custom {
         margin: 10px 15px;
+    }
+    .mobile {
+        padding-bottom: 15px;
     }
 }
 
@@ -70,6 +147,9 @@ h1 {
     }
     .btn-custom {
         margin: 10px 15px;
+    }
+    .mobile {
+        padding-bottom: 15px;
     }
 }
 
