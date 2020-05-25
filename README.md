@@ -18,3 +18,6 @@ por meio dos links a seguir:
 * Projeto Chalé Hotel - [Click Aqui](https://fagnerzulin.github.io/Projeto-Chale-Hotel/)
 * Projeto Museu Nacional - [Click Aqui](https://fagnerzulin.github.io/Projeto-Museu-Nacional/)
 * Projeto Finans - [Click Aqui](https://fagnerzulin.github.io/Projeto-Finans/)
+* Projeto Spotify - [Click Aqui](https://fagnerzulin.github.io/Projeto-Spotify/)
+
+
