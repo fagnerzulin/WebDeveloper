@@ -41,6 +41,11 @@ nav.nav-bar-transparent {
     text-align: center;
 }
 
+.carousel-control-next,
+.carousel-control-prev {
+    width: 5%;
+}
+
 .btn-custom {
     color: white;
     border-radius: 500px;
@@ -112,7 +117,7 @@ footer ul li i {
 }
 
 h1 {
-    font-weight: 900;
+    font-weight: 700;
     letter-spacing: -0.05em;
     margin-bottom: 50px;
     color: white;
@@ -138,6 +143,9 @@ h3 {
     .mobile {
         padding-bottom: 15px;
     }
+    .fa-3x {
+        font-size: 2em;
+    }
 }
 
 /* Dispositivos small (telefones em modo paisagem, com 576px ou mais)*/
@@ -150,6 +158,9 @@ h3 {
     }
     .mobile {
         padding-bottom: 15px;
+    }
+    .fa-3x {
+        font-size: 2em;
     }
 }
 
