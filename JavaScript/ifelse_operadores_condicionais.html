@@ -5,10 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>If else</title>
         <script>
-            if (7 >= 7) {
-                document.write("Entrou dentro do bloco if (verdadeiro)");
+            var media = 7;
+            var nota = prompt("Escreva a nota do aluno: ");
+
+            if (nota >= media) {
+                document.write("Aprovado");
             } else {
-                document.write("Entrou dentro do bloco else (falso)");
+                document.write("Reprovado");
             }
         </script>
     </head>
