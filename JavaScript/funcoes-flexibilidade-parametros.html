@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Funções - Flexibilidade de Parâmetros</title>
+        <script>
+            function soma(a, b) {
+                //b = b === undefined ? 0 : b; //teste para definir um valor
+                return a + b;
+            }
+
+            console.log(soma(7, 7));
+            console.log(soma(7, 7, 9, 15)); //descarta os parametros extras
+            console.log(soma(7)); // = NaN
+            console.log(soma()); // = NaN
+        </script>
+    </head>
+    <body></body>
+</html>
