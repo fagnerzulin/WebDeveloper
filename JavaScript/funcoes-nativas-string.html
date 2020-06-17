@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Funções Nativas para Manipular Strings</title>
+
+        <script>
+            var nome = "Fagner Zulin";
+            //propriedade length - conta o número de caracteres
+            document.write(nome.length);
+            document.write("<br/>");
+
+            //métodos
+            //charAt() - retorna o caracter que está na posição indicada, dentro
+            //da cadeia de caracteres
+            document.write(nome.charAt(11));
+            document.write("<br/>");
+
+            //indexOf() - retorna a posição da primeira ocorrência de um valor
+            //específico dentro de uma string
+            document.write(nome.indexOf("Z"));
+            document.write("<br/>");
+
+            //replace() - permite com base num valor de pesquisa e um outro
+            //valor de modificação para substituir textos
+            document.write(nome.replace("Zulin", "Alexandre"));
+            document.write("<br/>");
+
+            //substr() - extrai parte de uma string, com base de uma posição
+            //incial, seguida de um valor que representa a quantidade de
+            //caracteres a frente daquela posição inicial
+            document.write(nome.substr(7, 5));
+            document.write("<br/>");
+
+            // toLowerCase() / toUpperCase() - o primeiro passa aos caracteres
+            //para o minusculo e o segundo para o maiusculo
+            document.write(nome.toLowerCase());
+            document.write("<br/>");
+            document.write(nome.toUpperCase());
+            document.write("<br/>");
+
+            //trim() - remove os espaços em branco das extremidades de uma string
+            document.write(" " + nome + " ".trim());
+            document.write("<br/>");
+        </script>
+    </head>
+    <body></body>
+</html>
