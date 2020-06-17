@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Eventos - Mouse</title>
+
+        <script>
+            /* Eventos - mouse
+                    onclick - acionado quando o elemento é clicado
+
+                    ondblclick - acionado quando o elemento é clicado duas vezes
+
+                    onmouseup - acionado quando o clique sobre determinado elemento
+                        é liberado
+
+                    onmouseover - acionado quando o cursor do mouse sobrepõe o elemento
+
+                    onmouseout - acionado quando o cusror do mouse sai da região da
+                        página ocupada pelo elemento
+            */
+
+            function acao1() {
+                alert("O Elemento foi clicado");
+            }
+            function acao2() {
+                alert("O cursor do mouse deixou a região do elemento");
+            }
+        </script>
+    </head>
+    <body>
+        <div
+            id="click"
+            style="
+                background-color: #ccc;
+                height: 150px;
+                width: 150px;
+                display: inline-block;
+            "
+            onclick="acao1()"
+            onmouseout="acao2()"
+        ></div>
+    </body>
+</html>
