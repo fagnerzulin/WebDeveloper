@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Atividade 3</title>
+
+        <script>
+            var num1 = Number(prompt("Digite um número:"));
+            var num2 = Number(prompt("Digite outro número:"));
+            var operacao = prompt(
+                "Digite uma das operações (adição ou subtração): "
+            ).trim();
+
+            function somaOuSubtracao(num1, num2, operacao) {
+                switch (operacao) {
+                    case "adição":
+                        return num1 + num2;
+                        break;
+                    case "subtração":
+                        return num1 - num2;
+                        break;
+                    default:
+                        alert(
+                            "Você digitou a operação errado, recarregue e tente novamente"
+                        );
+                        return 0;
+                        break;
+                }
+            }
+
+            document.write(
+                "O resultado é: " + somaOuSubtracao(num1, num2, operacao)
+            );
+        </script>
+    </head>
+    <body></body>
+</html>
