@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Eventos - Formulários</title>
+
+        <script>
+            /*
+                Eventos de formulários
+                    onfocus - acionado quando o elemento recebe o foco do cursor
+                        do mouse, quando clicamos sobre o elemento
+                    onblur - acionado quando o elemento perde o foco do cursor,
+                        quando apertamos o tab ou clicamos em outro elemento
+                    onchange - acionado quando o estado do elemento é modificado
+            */
+        </script>
+    </head>
+    <body>
+        <input
+            onfocus="console.log('Recebeu o Foco')"
+            onblur="console.log('Perdeu o Foco')"
+            type="text"
+            name=""
+            id=""
+        />
+
+        <select onchange="console.log('Estado foi modificado')" name="" id="">
+            <option value="">--Selecione--</option>
+            <option value="1">Primeira opção</option>
+            <option value="2">Segunda opção</option>
+        </select>
+    </body>
+</html>
