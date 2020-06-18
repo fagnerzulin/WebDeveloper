@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>DOM - Selecionando Elementos</title>
+
+        <script>
+            /*
+                Seleção de Elementos:
+                    getElementById() - seleciona o elemento pelo ID
+                    getElementsByTagName() - seleciona o elemento pela tag html
+                    getElementsByClassName() - seleciona o elemento pela classe
+                    getElementsByName() - seleciona o elemento pelo seu name html
+            */
+        </script>
+    </head>
+    <body>
+        <input
+            type="text"
+            placeholder="Digite seu Nome"
+            name="nome"
+            class="campo_texto"
+            id="nome_usuario"
+        />
+
+        <script>
+            //console.log(document.getElementById("nome_usuario"));
+            //console.log(document.getElementsByTagName("input"));
+            //console.log(document.getElementsByTagName("input"));
+            //console.log(document.getElementsByClassName("campo_texto"));
+            console.log(document.getElementsByName("nome"));
+        </script>
+    </body>
+</html>
