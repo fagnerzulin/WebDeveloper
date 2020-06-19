@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>DOM - Manipulando estilos de elementos</title>
+
+        <script>
+            function modificaEstilo(corDeFundo, l = "150px", a = "150px") {
+                document.getElementById(
+                    "quadrado"
+                ).style.background = corDeFundo;
+                document.getElementById("quadrado").style.width = l;
+                document.getElementById("quadrado").style.height = a;
+            }
+        </script>
+    </head>
+    <body>
+        <h3>Manipulando Estilo</h3>
+
+        <button onclick="modificaEstilo('#ff0000', '200px')" type="button">
+            Vermelho
+        </button>
+        <button
+            onclick="modificaEstilo('#00ff00', '150px', '20px')"
+            type="button"
+        >
+            Verde
+        </button>
+        <button
+            onclick="modificaEstilo('#0000ff', '150px' , '200px')"
+            type="button"
+        >
+            Azul
+        </button>
+        <hr />
+
+        <div
+            id="quadrado"
+            style="
+                border: solid 1px rgb(29, 13, 13);
+                width: 100px;
+                height: 100px;
+            "
+        ></div>
+    </body>
+</html>
