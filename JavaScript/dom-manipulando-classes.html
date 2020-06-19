@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>DOM - Manipulando classes de elementos</title>
+
+        <style>
+            .estilo1 {
+                background: #ff0000;
+                color: #fff;
+                font-size: 2em;
+            }
+
+            .estilo2 {
+                width: 400px;
+                height: 100px;
+                background-color: #ff0000;
+                text-align: center;
+                font-size: 2.5em;
+                color: #fff;
+                padding: 25px;
+            }
+        </style>
+
+        <script>
+            function modificaClasse() {
+                var classe = document.getElementById("mensagem").className;
+                document.getElementById("mensagem").className =
+                    classe == "estilo1" ? "estilo2" : "estilo1";
+            }
+        </script>
+    </head>
+    <body>
+        <div id="mensagem" class="estilo1">
+            Modificando a classe do elemento
+        </div>
+        <hr />
+        <button onclick="modificaClasse()" type="button">Aplicar Classe</button>
+    </body>
+</html>
