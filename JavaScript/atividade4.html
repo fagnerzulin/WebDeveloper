@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Atividade 4</title>
+
+        <script>
+            function amarelo() {
+                document.getElementById("caixaTexto").style.background = "#ff0";
+            }
+
+            function confere() {
+                var valor = document.getElementById("caixaTexto").value;
+                document.getElementById("caixaTexto").style.background =
+                    valor.length < 3 ? "#ff0000" : "#00ff00";
+            }
+        </script>
+    </head>
+    <body>
+        <input
+            onblur="confere()"
+            onfocus="amarelo()"
+            type="text"
+            id="caixaTexto"
+        />
+    </body>
+</html>
