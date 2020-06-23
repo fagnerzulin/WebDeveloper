@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Array - incluindo e removendo elementos</title>
+        <script>
+            var lista_coisas = Array();
+
+            lista_coisas["Frutas"] = Array();
+            lista_coisas["Pessoas"] = [];
+
+            lista_coisas["Frutas"].push("Uva"); // - inclui no fim
+            lista_coisas["Frutas"].unshift("Banana"); //inclui no começo
+
+            //lista_coisas["Frutas"].pop(); - exclui no final
+
+            lista_coisas["Frutas"].shift(); // exclui no começo
+
+            console.log(lista_coisas);
+        </script>
+    </head>
+    <body></body>
+</html>
