@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Array - pesquisar elementos</title>
+        <script>
+            var lista_fruta = Array("banana", "maçã", "morango", "uva");
+
+            console.log(lista_fruta);
+            //console.log(lista_fruta.indexOf("morango"));
+
+            var index = lista_fruta.indexOf("abacaxi");
+
+            if (index == -1) {
+                console.log("Elemento não encontrado");
+            } else {
+                console.log("Elemento existe e está na posição: " + index);
+            }
+        </script>
+    </head>
+    <body></body>
+</html>
