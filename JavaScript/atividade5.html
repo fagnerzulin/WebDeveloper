@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Atividade 5</title>
+    </head>
+    <body>
+        <input type="text" id="entrada" />
+        <button onclick="Adicionar()" type="button">Adicionar</button>
+        <button onclick="Ordenar()" type="button">Ordenar</button>
+        <button onclick="Mostar()" type="button">Mostrar Array</button>
+
+        <hr />
+
+        <textarea id="lista" cols="100" rows="5"></textarea>
+
+        <script>
+            var objetos = Array();
+
+            function Adicionar() {
+                var valor = document.getElementById("entrada").value;
+
+                if (valor == "") {
+                    alert("Informe um valor válido");
+                } else if (objetos.indexOf(valor) == -1) {
+                    objetos.push(valor);
+                } else {
+                    alert("Objeto já foi adicionado");
+                }
+                document.getElementById("entrada").value = "";
+            }
+
+            function Ordenar() {
+                objetos = objetos.sort();
+                Mostar();
+            }
+
+            function Mostar() {
+                document.getElementById("lista").value = objetos;
+            }
+        </script>
+    </body>
+</html>
