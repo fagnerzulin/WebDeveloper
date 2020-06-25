@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ForEach</title>
+        <script>
+            // var listaFuncionarios = [
+            //     "Viviane",
+            //     "Rosângela",
+            //     "Miguel",
+            //     "Lucas",
+            //     "Fernanda",
+            // ];
+
+            var listaFuncionarios = Array();
+            //o forEach só atua com indices númericos
+            listaFuncionarios["x"] = "Viviane";
+            listaFuncionarios[false] = "Rosângela";
+            listaFuncionarios[3] = "Miguel";
+            listaFuncionarios[27] = "Lucas";
+            listaFuncionarios[-12] = "Fernanda";
+
+            var f = function (valor, indice, array) {
+                console.log("indice " + indice + " | valor: " + valor);
+            };
+            listaFuncionarios.forEach(f);
+
+            // console.log(listaFuncionarios);
+            // document.write(listaFuncionarios[3] + "<br/>");
+
+            // listaFuncionarios.forEach(function (valor, indice, array) {
+            //     console.log("indice " + indice + " | valor: " + valor);
+            //     if (valor == "Lucas") {
+            //         array[indice] = "Um novo valor ";
+            //     }
+            // });
+
+            // document.write(listaFuncionarios[3] + "<br/>");
+            // console.log(listaFuncionarios);
+
+            // listaFuncionarios.forEach((element) => {
+            //     console.log(element);
+            // });
+        </script>
+    </head>
+    <body></body>
+</html>
