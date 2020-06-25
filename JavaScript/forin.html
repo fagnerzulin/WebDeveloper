@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ForIn</title>
+
+        <script>
+            // var listaConvidados = [
+            //     "Jorge",
+            //     "Jamilton",
+            //     "Fagner",
+            //     "Ana",
+            //     "José",
+            //     "Maria",
+            // ];
+
+            var listaConvidados = Array();
+
+            listaConvidados["a"] = "Jorge";
+            listaConvidados[10] = "Jamilton";
+            listaConvidados["zebra"] = "Fagner";
+            listaConvidados[-1] = "Ana";
+            listaConvidados[true] = "José";
+            listaConvidados[1.2] = "Maria";
+
+            console.log(listaConvidados);
+            for (var x in listaConvidados) {
+                console.log("Índice " + x + " valor " + listaConvidados[x]);
+            }
+        </script>
+    </head>
+    <body></body>
+</html>
