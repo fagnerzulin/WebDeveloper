@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Atividade 6</title>
+
+        <script>
+            document.write("<h1>Atividade 1</h1>");
+
+            var lista_frutas = Array("Banana", "Maçã", "Morango", "Uva");
+            for (let y = 0; y < lista_frutas.length; y++) {
+                document.write(lista_frutas[y] + "<br/>");
+            }
+
+            document.write("<hr/>");
+            document.write("<h1>Atividade 2</h1>");
+
+            var num1 = 1;
+            while (num1 <= 10) {
+                var num2 = 1;
+                while (num2 <= 10) {
+                    document.write(
+                        num1 + " x " + num2 + " = " + num1 * num2 + "<br/>"
+                    );
+                    num2++;
+                }
+                document.write("<hr/>");
+                num1++;
+            }
+        </script>
+    </head>
+    <body></body>
+</html>
