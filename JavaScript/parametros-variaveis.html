@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Funções - Parâmetros Variáveis</title>
+        <script>
+            function soma() {
+                var resultado = 0;
+                for (const i in arguments) {
+                    resultado += arguments[i];
+                }
+                return resultado;
+                // arguments representa um objeto (váriavel local)
+            }
+
+            console.log(soma(7, 5, 3.2, 0.8, "texto"));
+        </script>
+    </head>
+    <body></body>
+</html>
