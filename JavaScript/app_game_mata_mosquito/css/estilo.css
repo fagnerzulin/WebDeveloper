@@ -1,7 +1,15 @@
 body {
-    background: url("../img/bg3.jpg") #a9c519;
+    background: url("../img/bg2.jpg") #a9c519;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+@media (max-width: 767.98px) {
+    body {
+        background: url("../img/bg3.jpg") #a9c519;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
 }
 
 .mosca1 {
