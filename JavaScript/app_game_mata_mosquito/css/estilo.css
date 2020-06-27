@@ -18,10 +18,24 @@ body {
         background: rgba(0, 0, 0, 0.4);
         border-radius: 90%;
     }
+    .inicio {
+        background: rgba(0, 0, 0, 0.4);
+        border-radius: 90%;
+    }
+    .inicio img {
+        max-width: 250px;
+        max-height: 200px;
+        width: auto;
+        height: auto;
+    }
 }
 
 @media (min-width: 768px) {
     .game {
+        background: rgba(0, 0, 0, 0.4);
+        border-radius: 90%;
+    }
+    .inicio {
         background: rgba(0, 0, 0, 0.4);
         border-radius: 90%;
     }
