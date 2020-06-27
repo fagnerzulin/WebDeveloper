@@ -10,6 +10,21 @@ body {
         background-repeat: no-repeat;
         background-size: 100%;
     }
+    #game-over {
+        max-width: 250px;
+        max-height: 200px;
+        width: auto;
+        height: auto;
+        background: rgba(0, 0, 0, 0.4);
+        border-radius: 90%;
+    }
+}
+
+@media (min-width: 768px) {
+    #game-over {
+        background: rgba(0, 0, 0, 0.4);
+        border-radius: 90%;
+    }
 }
 
 .mosca1 {
