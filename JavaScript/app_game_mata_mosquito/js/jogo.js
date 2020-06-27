@@ -1,5 +1,6 @@
 var largura = 0;
 var altura = 0;
+var vidas = 1;
 
 function ajustaTamanhoPalcoJogo() {
     largura = window.innerHeight;
@@ -11,6 +12,12 @@ function posicaoRandomica() {
     //remover a mosca anterior (caso exista)
     if (document.getElementById("mosca")) {
         document.getElementById("mosca").remove();
+
+        if (vidas > 3) {
+        } else {
+            document.getElementById("v" + vidas).src = "img/coracao_vazio.png";
+            vidas++;
+        }
     }
 
     var posicaoX = Math.floor(Math.random() * largura) - 90;
@@ -27,6 +34,9 @@ function posicaoRandomica() {
     mosca.style.top = posicaoY + "px";
     mosca.style.position = "absolute";
     mosca.id = "mosca";
+    mosca.onclick = function () {
+        this.remove();
+    };
 
     document.body.appendChild(mosca);
 }

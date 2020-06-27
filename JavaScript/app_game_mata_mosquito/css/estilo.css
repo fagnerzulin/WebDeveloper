@@ -1,6 +1,7 @@
 body {
-    background: url("../img/bg2.jpg");
+    background: url("../img/bg3.jpg") #a9c519;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .mosca1 {
