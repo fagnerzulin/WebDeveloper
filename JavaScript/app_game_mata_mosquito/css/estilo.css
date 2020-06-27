@@ -10,7 +10,7 @@ body {
         background-repeat: no-repeat;
         background-size: 100%;
     }
-    #game-over {
+    .game {
         max-width: 250px;
         max-height: 200px;
         width: auto;
@@ -21,7 +21,7 @@ body {
 }
 
 @media (min-width: 768px) {
-    #game-over {
+    .game {
         background: rgba(0, 0, 0, 0.4);
         border-radius: 90%;
     }
