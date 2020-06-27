@@ -17,7 +17,7 @@ function posicaoRandomica() {
     //criar o elemento html
     var mosca = document.createElement("img");
     mosca.src = "img/mosca.png";
-    mosca.className = tamanhoAleatorio();
+    mosca.className = tamanhoAleatorio() + " " + ladoAleatorio();
     mosca.style.left = posicaoX + "px";
     mosca.style.top = posicaoY + "px";
     mosca.style.position = "absolute";
@@ -37,5 +37,17 @@ function tamanhoAleatorio() {
 
         case 2:
             return "mosca3";
+    }
+}
+
+function ladoAleatorio() {
+    var lado = Math.floor(Math.random() * 2);
+
+    switch (lado) {
+        case 0:
+            return "ladoA";
+
+        case 1:
+            return "ladoB";
     }
 }
