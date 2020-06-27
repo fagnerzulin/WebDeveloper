@@ -15,11 +15,15 @@
                 <img id="v2" src="img/coracao_cheio.png" />
                 <img id="v3" src="img/coracao_cheio.png" />
             </div>
-            <div class="cronometro">Tempo restante: ?</div>
+            <div class="cronometro">
+                Tempo restante: <span id="cronometro"></span>
+            </div>
         </div>
 
         <script>
-            setInterval(() => {
+            document.getElementById("cronometro").innerHTML = tempo;
+
+            var criaMosca = setInterval(() => {
                 posicaoRandomica();
             }, 2000);
         </script>

@@ -1,12 +1,23 @@
 var largura = 0;
 var altura = 0;
 var vidas = 1;
+var tempo = 15;
 
 function ajustaTamanhoPalcoJogo() {
     largura = window.innerHeight;
     altura = window.innerHeight;
 }
 ajustaTamanhoPalcoJogo();
+
+var cronometro = setInterval(() => {
+    tempo -= 1;
+    if (tempo < 0) {
+        clearInterval(cronometro);
+        clearInterval(criaMosca);
+    } else {
+        document.getElementById("cronometro").innerHTML = tempo;
+    }
+}, 1000);
 
 function posicaoRandomica() {
     //remover a mosca anterior (caso exista)
