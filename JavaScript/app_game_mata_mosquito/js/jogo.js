@@ -50,9 +50,12 @@ function posicaoRandomica() {
             vidas++;
         }
     }
+    console.log(largura, altura);
 
     var posicaoX = Math.floor(Math.random() * largura) - 90;
     var posicaoY = Math.floor(Math.random() * altura) - 90;
+
+    posicaoX = posicaoX <= 650 ? 250 : posicaoX;
 
     posicaoX = posicaoX < 0 ? 0 : posicaoX;
     posicaoY = posicaoY < 0 ? 0 : posicaoY;
