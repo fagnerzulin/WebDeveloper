@@ -4,23 +4,25 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-        <title>Document</title>
+        <title>Variáveis - Var e Let</title>
         <script type="text/babel">
             // 3 escopos: global, função, e bloco
 
             //quando o var está dentro de um bloco
-            //ele sofre um hosting para o escopo superior
+            //ele sofre um hoisting para o escopo superior
             //ou seja, se estiver numa função... eleva para o
             //escopo da função. Se estiver no escopo global
             //para ele que será feita a elevação
 
             // let mantém o escopo onde a variável é criada
 
-            if (true) {
-                let serie = "Friends";
-                console.log(serie);
+            var serie = "Friends";
+
+            {
+                var serie = "The Walking Dead";
+                console.log("Dentro do bloco: " + serie);
             }
-            //console.log(serie);
+            console.log("Fora do bloco: " + serie);
         </script>
     </head>
     <body></body>
