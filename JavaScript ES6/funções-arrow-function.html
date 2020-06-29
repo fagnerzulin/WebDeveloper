@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        <title>Funções Arrow Function</title>
+        <script type="text/babel">
+            //função anonima tradicional
+            // let quadrado = function (x = 5) {
+            //     return x * x;
+            // };
+
+            //arrow function - padrão (se não receber parametros,
+            //tem que ser dessa forma )
+            // let quadrado = (x) => {
+            //     return x * x;
+            // };
+
+            //se tiver um unico parametro não precisa das chaves
+            //se estiver uma unica instrução de retorno, não precisa
+            //das chaves e da palavra retorno - retorno implicito
+            //let quadrado = (x) => x * x;
+
+            //document.write(quadrado(3));
+
+            /*let parOuImpar = function (numero) {
+                if (numero % 2 == 0) {
+                    return "Par";
+                } else {
+                    return "Impar";
+                }
+            };*/
+
+            /*let parOuImpar = (numero) => {
+                if (numero % 2 == 0) {
+                    return "Par";
+                } else {
+                    return "Impar";
+                }
+            };*/
+
+            let parOuImpar = (numero) => (numero % 2 == 0 ? "Par" : "Impar");
+
+            document.write(parOuImpar(9));
+        </script>
+    </head>
+    <body></body>
+</html>
