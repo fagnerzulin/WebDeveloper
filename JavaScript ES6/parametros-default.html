@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        <title>Funções com parâmetros default</title>
+        <script type="text/babel">
+            function contarUmaHistoria(
+                personagem = "Fubá",
+                atividade = "correr no parque",
+                dono = "José"
+            ) {
+                document.write(
+                    `Era uma vez um cachorro chamado ${personagem}, ele adorava ${atividade},
+                    seu dono se chamava ${dono}.
+                    E eles viveram felizes para sempre!`
+                );
+            }
+            //para usar o valor default em parametro que não seja o ultimo
+            //usa o valor underfined no lugar que seria o valor desse parametro
+            contarUmaHistoria(undefined, "Enterrar ossos", "Pedro");
+        </script>
+    </head>
+    <body></body>
+</html>
