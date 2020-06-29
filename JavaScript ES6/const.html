@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        <title>Const - JavaScript</title>
+        <script type="text/babel">
+            const SERIE = "Friends";
+            //constantes não podem ser alteradas depois de declaradas
+            //a atribuição e valor deve ser feita na hora de declarar a
+            //constante
+            //não temos elevações nas const
+
+            function x() {
+                const SERIE = "The Walking Dead";
+                console.log("Dentro da função: " + SERIE);
+            }
+            x();
+            console.log(SERIE);
+        </script>
+    </head>
+    <body></body>
+</html>
