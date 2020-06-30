@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        <title>OO - Pilar do Encapsulamento</title>
+        <script type="text/babel">
+            // ainda em fase de deliberação... o controle de
+            // privacidade de atributos em javascript se fará por meio
+            // do #nomeDoAtributo
+            class Tv {
+                #relacaoCanais;
+                #canalAtivo;
+                #volume;
+                constructor() {
+                    this.#relacaoCanais = Array(2, 4, 5, 7, 10);
+                    this.#canalAtivo = 5;
+                    this.#volume = 5;
+                }
+
+                get relacaoCanais() {
+                    return this.#relacaoCanais;
+                }
+                get canalAtivo() {
+                    return this.#canalAtivo;
+                }
+                get volume() {
+                    return this.#volume;
+                }
+
+                set relacaoCanais(relacaoCanais) {
+                    this.#relacaoCanais = relacaoCanais;
+                }
+                set canalAtivo(canal) {
+                    if (this.#relacaoCanais.indexOf(canal) !== -1) {
+                        this.#canalAtivo = canal;
+                    }
+                }
+                set volume(volume) {
+                    this.#volume = volume;
+                }
+            }
+
+            let tv = new Tv();
+            console.log(tv.canalAtivo);
+            tv.canalAtivo = 10;
+            console.log(tv.canalAtivo);
+        </script>
+    </head>
+    <body></body>
+</html>
