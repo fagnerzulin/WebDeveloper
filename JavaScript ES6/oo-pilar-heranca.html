@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        <title>OO - Pilar da Herança</title>
+        <script type="text/babel">
+            class Animal {
+                constructor(cor, tamanho, peso) {
+                    this.cor = cor;
+                    this.tamanho = tamanho;
+                    this.peso = peso;
+                }
+
+                dormir() {
+                    console.log("Dormir");
+                }
+            }
+
+            class Cachorro extends Animal {
+                constructor(cor, tamanho, orelhas, peso) {
+                    super(cor, tamanho, peso);
+                    this.orelhas = orelhas;
+                }
+                correr() {
+                    console.log("Correr");
+                }
+
+                rosnar() {
+                    console.log("Rosnar");
+                }
+            }
+
+            class Passaro extends Animal {
+                constructor(cor, tamanho, bico, peso) {
+                    super(cor, tamanho, peso);
+                    this.bico = bico;
+                }
+
+                voar() {
+                    console.log("Voar");
+                }
+            }
+
+            class Papagaio extends Passaro {
+                constructor(cor, tamanho, bico, peso) {
+                    super(cor, tamanho, bico, peso);
+                    this.sabeFalar = true;
+                }
+
+                falar() {
+                    console.log("Falar");
+                }
+            }
+
+            let cachorro = new Cachorro(
+                "Branco e marrom",
+                30,
+                "Grandes e caídas",
+                10
+            );
+            let passaro = new Passaro("Branco e marrom", 10, "Pequeno", 1);
+            let papagaio = new Papagaio("Verde", 20, "Médio", 2.5);
+
+            console.log(cachorro);
+            console.log(passaro);
+            console.log(papagaio);
+
+            // cachorro.dormir();
+            // passaro.dormir();
+            // papagaio.falar();
+            // papagaio.dormir();
+            // papagaio.voar();
+        </script>
+    </head>
+    <body></body>
+</html>
