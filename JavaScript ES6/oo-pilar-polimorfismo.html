@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        <title>OO - Pilar do Polimorfismo</title>
+        <script type="text/babel">
+            class Animal {
+                constructor(cor, tamanho, peso) {
+                    this.cor = cor;
+                    this.tamanho = tamanho;
+                    this.peso = peso;
+                }
+
+                dormir() {
+                    console.log("Dormir");
+                }
+            }
+
+            class Passaro extends Animal {
+                constructor(cor, tamanho, bico, peso) {
+                    super(cor, tamanho, peso);
+                    this.bico = bico;
+                }
+
+                voar() {
+                    console.log("Voar");
+                }
+            }
+
+            class Papagaio extends Passaro {
+                constructor(cor, tamanho, bico, peso, sabeFalar) {
+                    super(cor, tamanho, bico, peso);
+                    this.sabeFalar = sabeFalar;
+                }
+
+                falar() {
+                    console.log("Falar");
+                }
+            }
+
+            class Avestruz extends Passaro {
+                constructor(cor, tamanho, bico, peso) {
+                    super(cor, tamanho, bico, peso);
+                }
+
+                enterrarCabeca() {
+                    console.log("Cabeça enterrada");
+                }
+
+                voar() {
+                    console.log("Não sabe voar");
+                }
+            }
+
+            let papagaio = new Papagaio("Verde", 20, "Médio", 2.5, true);
+            console.log(papagaio);
+            papagaio.voar();
+
+            let avestruz = new Avestruz("Branco e preto", 250, "Grande", 15000);
+            console.log(avestruz);
+            avestruz.enterrarCabeca();
+            avestruz.voar();
+        </script>
+    </head>
+    <body></body>
+</html>
