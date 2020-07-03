@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        <title>Objetos Literais - Melhorias de notação</title>
+        <script type="text/babel">
+            let nome = "Fagner";
+            let idade = 24;
+            let sexo = "Masculino";
+            let profissao = "Programdor";
+
+            let objeto = {
+                nome: nome,
+                idade: idade,
+                sexo: sexo,
+                profissao: profissao,
+                exibirResumo: function () {
+                    console.log(
+                        `${this.nome}, ${this.idade} anos, ${this.sexo}, é ${this.profissao}.`
+                    );
+                },
+            };
+
+            console.log(objeto);
+            objeto.exibirResumo();
+
+            let objeto2 = {
+                nome, //nome = nome da variável -- valor = valor da variavel
+                idade,
+                sexo,
+                profissao,
+                exibirResumo() {
+                    //versão atual para funções em objetos literais
+                    console.log(
+                        `${this.nome}, ${this.idade} anos, ${this.sexo}, é ${this.profissao}.`
+                    );
+                },
+            };
+
+            console.log(objeto2);
+            objeto.exibirResumo();
+        </script>
+    </head>
+    <body></body>
+</html>
