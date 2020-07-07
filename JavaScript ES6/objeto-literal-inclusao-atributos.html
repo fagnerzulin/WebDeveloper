@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        <title>Objetos Literais - Criação Dinâmica de pares chave/valor</title>
+        <script type="text/babel">
+            let pessoa = {
+                nome: "maria",
+                idade: 25,
+            };
+
+            console.log(pessoa);
+
+            pessoa.sexo = "Feminino";
+
+            console.log(pessoa);
+
+            pessoa.dizerOi = () => console.log("Olá, tudo bem ?");
+
+            pessoa.dizerOi();
+        </script>
+    </head>
+    <body></body>
+</html>
