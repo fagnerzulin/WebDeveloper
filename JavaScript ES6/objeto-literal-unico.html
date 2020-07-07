@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        <title>Objetos Literais - Únicos</title>
+        <script type="text/babel">
+            let assinataura = {
+                idCliente: 1000,
+                descricao: "Acesso a Internet",
+                status() {
+                    console.log("Ativo");
+                },
+            };
+
+            console.log(assinataura.descricao);
+
+            let y = assinataura;
+            console.log(y.descricao);
+
+            //////////////////////////////////////
+            y.descricao = "Internet + TV + Telefone";
+            console.log(assinataura.descricao);
+            console.log(y.descricao);
+        </script>
+    </head>
+    <body></body>
+</html>
