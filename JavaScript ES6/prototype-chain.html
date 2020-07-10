@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        <title>Prototype - Herança (Prototype Chain)</title>
+        <script type="text/babel">
+            Object.prototype.attr50 = "z"; //estabelece um atributo que pode
+            //ser usado em toda a aplicação
+            //mas deve tomar cuidado, pois esse atributo será global
+
+            let animal = { attr1: "a" };
+            let vertebrado = { __proto__: animal, attr2: "b" };
+            let ave = { __proto__: vertebrado, attr3: "c", attr2: "x" };
+
+            console.log(ave.attr3, ave.attr2, ave.attr1, ave.attr50);
+        </script>
+    </head>
+    <body></body>
+</html>
