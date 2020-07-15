@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        <title>Destructuring Assignment - Objetos</title>
+        <script type="text/babel">
+            //composição
+            let produto = {
+                descricao: "Notebook",
+                preco: 1800,
+                detalhes: {
+                    fabricante: "ABC",
+                    modelo: "XUZ",
+                },
+            };
+
+            //let { descricao, preco } = produto; // aqui o acesso se faz com o
+            //nome do atributo
+
+            //let { descricao: d, preco: p } = produto; // atribuir a variaveis com
+            //outros nomes
+
+            //let { descricao: d, preco: p, desconto = 5 } = produto; // valor default
+
+            let {
+                detalhes: { modelo },
+            } = produto; //acessar objetos dentro de objetos
+            console.log(modelo);
+        </script>
+    </head>
+    <body></body>
+</html>
