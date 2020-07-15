@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        <title>Destructuring Assignment - Funções</title>
+        <script type="text/babel">
+            //array
+            /*
+            let arr = [10, 20, 30, 40];
+            function teste([a, b, , c, d = 100]) {
+                console.log(a, b, c, d);
+            }
+
+            teste(arr);*/
+
+            let obj = {
+                a: 10,
+                b: 20,
+                c: 30,
+                d: 40,
+            };
+
+            //o Destructuring acessa diretamente o atributo pela chave
+            function teste({ a: x, b, d }) {
+                console.log(x, b, d);
+            }
+
+            teste(obj);
+        </script>
+    </head>
+    <body></body>
+</html>
